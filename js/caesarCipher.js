@@ -19,6 +19,5 @@ exports.caesarCipher = function(str,shift) {
 
     let result= str.join('')
     return result
-
 }
 
