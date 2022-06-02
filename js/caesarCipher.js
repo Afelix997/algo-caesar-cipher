@@ -4,7 +4,7 @@ exports.caesarCipher = function(str,shift) {
     alpha= alpha.repeat(2).split('')      
     str = str.split("")
 
-    if (Math.sign(shift) == -1){
+    if (shift < 0){
     alpha.reverse()
     upperAlpha.reverse()
     shift= Math.abs(shift) 
@@ -19,6 +19,5 @@ exports.caesarCipher = function(str,shift) {
 
     let result= str.join('')
     return result
-
 }
 
